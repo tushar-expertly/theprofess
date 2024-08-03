@@ -77,27 +77,23 @@ function Consulting() {
       <div className="">
         <div className="max-w-4xl mx-auto px-4 py-8">
           <p className="mb-4">
-            Enjoy the flexibility of expert-led consultation or instruction,
-            tailored to your schedule and location.
+            Discover the ease of expert-led consultation or training, customized
+            to fit your schedule and preferred location.
           </p>
 
           <p className="mb-4">
-            Tell us your needs, and we'll create a solution that alleviates
-            concerns while providing maximum benefits for you and your team.
+            Provide your requirements, and we’ll develop a tailored solution to
+            address your concerns and maximize your team's benefits.
           </p>
 
           <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-            Our personalized consulting/training services offer:
+            Our consulting/training services include:
           </h2>
-          <ul className=" space-y-1 list-disc list-inside dark:text-gray-400">
-            <li>A curriculum designed to meet your goals.</li>
-            <li>Flexible scheduling and delivery.</li>
+          <ul className="max-w-md space-y-1 list-disc list-inside dark:text-gray-400">
+            <li>Tailored curriculum aligned with your goals.</li>
+            <li>Flexible scheduling and delivery..</li>
             <li>Access to top-tier instructors.</li>
             <li>Scalable training for any group size.</li>
-
-            <li>
-              Request your personalized estimate today and advance towards tailored training excellence.
-            </li>
           </ul>
         </div>
       </div>
@@ -105,7 +101,8 @@ function Consulting() {
       <section className="bg-white dark:bg-gray-900">
         <div className="container px-4 py-8 mx-auto md:w-2/3">
           <p className="mt-2 text-lg text-gray-800 font-medium leading-relaxed bg-clip-text">
-          Request your personalized estimate today and advance towards tailored training excellence.
+            Request your personalized estimate today and advance towards
+            tailored training excellence.
           </p>
 
           <div className="p-4 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-6">
@@ -257,7 +254,7 @@ function Consulting() {
 
               <button
                 type="submit"
-                className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+                className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gradient-to-r from-blue-500 to-green-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Sending..." : "Send message"}

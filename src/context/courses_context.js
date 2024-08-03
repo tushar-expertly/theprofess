@@ -22,7 +22,7 @@ export const CoursesProvider = ({ children }) => {
       );
       const filteredCourses = response.data.filter((course) =>
         course.Sites.some(
-          (site) => site.name === "mytutorstation" || site.siteId === 5
+          (site) => site.name === "theprofess" || site.siteId === 4
         )
       );
       const allCourses = filteredCourses?.sort(

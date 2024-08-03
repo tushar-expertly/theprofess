@@ -11,16 +11,14 @@ function Subscribe() {
           </h2>
 
           <p className="max-w-4xl mt-6 text-center text-gray-500 dark:text-gray-300">
-            As a regulatory compliance or healthcare professional, staying
-            informed about the latest developments is crucial. MyTutorStation is your
-            go-to source for timely and relevant information. Subscribe now to
-            receive insightful updates and stay ahead in your field with the
-            latest advancements and news tailored to your interests.
+            Are you a professional in regulatory compliance or healthcare,
+            always keen to stay updated on the latest developments? Expertly is
+            your perfect destination.
           </p>
           <p className="max-w-4xl mt-6 text-center text-gray-500 dark:text-gray-300">
-            Gain access to a wealth of insightful information tailored to your
-            interests and industry. Subscribe now to stay updated with the
-            latest advancements and news in your area of expertise.
+            Subscribe to uncover a trove of insightful information specifically
+            curated for your industry. Stay informed with the most recent
+            happenings and advancements by subscribing today.
           </p>
         </div>
       </section>
@@ -99,13 +97,13 @@ function Subscribe() {
                     />
                   </div>
                   <label htmlFor="remember" className="ms-2 text-sm  ">
-                    I agree to receive information about mytutorstation.com training
+                    I agree to receive information about theprofess.com training
                   </label>
                 </div>
               </div>
 
               <div className="mt-4 flex items-center justify-between">
-                <button className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                <button className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-orange-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                   Subscribe
                 </button>
               </div>

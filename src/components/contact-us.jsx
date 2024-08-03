@@ -69,7 +69,7 @@ function ContactUs() {
 
   return (
     <Layout>
-      <section className="bg-slate-100 dark:bg-gray-900">
+      <section className="bg-white dark:bg-gray-900">
         <div className="container px-6 py-12 mx-auto">
           <div className="text-center">
             <p className="font-medium text-blue-500 dark:text-blue-400">
@@ -111,7 +111,7 @@ function ContactUs() {
                 Our friendly team is here to help.
               </p>
               <p className="mt-2 text-blue-500 dark:text-blue-400">
-                customercare@mytutorstation.com
+                contact@theprofess.com
               </p>
             </div>
 
@@ -145,14 +145,15 @@ function ContactUs() {
                 Come say hello at our office.
               </p>
               <p className="mt-2 text-blue-500 dark:text-blue-400">
-                3525 Brooke Street Houston, Texas 77092 US
+                3166 Kerry Way Bell Gardens <br />
+                California 90201 US
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-slate-100 dark:bg-gray-900">
+      <section className="bg-white dark:bg-gray-900">
         <div className="container px-4 py-8 mx-auto md:w-2/3">
           <div className="p-4 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-6">
             <form onSubmit={handleSubmit}>
@@ -302,7 +303,7 @@ function ContactUs() {
 
               <button
                 type="submit"
-                className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+                className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gradient-to-r from-blue-500 to-green-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Sending..." : "Send message"}

@@ -8,10 +8,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      extend: {
-        fontFamily: {
-          custom: ["Lucida Handwriting", "cursive"],
-        },
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
       },
     },
   },
