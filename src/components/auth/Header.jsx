@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ExpertlyLogo from "../../Assets/logo/ExpertlyLogo.jpg";
+import ExpertlyLogo from "../../Assets/logo/ExpertlyLogo.png";
 export default function Header({
   heading,
   paragraph,

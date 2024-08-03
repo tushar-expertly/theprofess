@@ -7,55 +7,60 @@ function TermsOfUse() {
       <div className="bg-gray-100 min-h-screen">
         <div className="max-w-4xl mx-auto px-4 py-8">
           <h2 className="text-2xl font-semibold mb-4">Terms of Use</h2>
-          <p className="font-semibold mb-2">Legal</p>
+          {/* <p className="font-semibold mb-2">Legal</p> */}
           <p className="font-semibold mb-2">Copyright Issues</p>
           <p className="mb-4">
-            Documents and information on the Theprofess website may be protected
-            by U.S. and international copyright laws. Any reproduction or
-            transmission beyond fair use requires written consent from the
-            copyright holders.
+            The MyTutorStation website contains documents and resources contributed by
+            various entities that may be protected under U.S. and international
+            copyright laws. Reproduction or transmission of these materials
+            beyond fair use as defined by law requires prior written permission
+            from the copyright owners.
           </p>
           <p className="font-semibold mb-2">Disclaimers</p>
           <p className="mb-4">
-            This website provides information for the convenience of visitors.
-            Theprofess endeavors to ensure accuracy, but does not guarantee the
-            reliability or authenticity of third-party information. Theprofess
-            is not liable for any actions taken based on the information on this
-            site or for any resulting consequences.
+            Information on this website is provided for the benefit of visitors.
+            While we strive to ensure accuracy and currency, MyTutorStation does not
+            guarantee the reliability or authenticity of third- party
+            information. MyTutorStation disclaims any liability for actions taken
+            based on the information presented, as well as any consequences
+            arising from such actions.
           </p>
-          <p className="mb-4">External Links</p>
+          {/* <p className="mb-4">User Responsibility:</p>
           <p className="mb-4">
-            The Theprofess web portal may include links to external sites
-            maintained by other entities. These links are intended to provide
-            relevant information to visitors. The inclusion of a link does not
-            imply endorsement by Theprofess. Links may be removed or updated at
-            any time without notice.
-          </p>
+            The information presented here is intended for general informational
+            purposes only. You are responsible for making informed decisions
+            based on your specific circumstances and independent research.
+            Eductre is not liable for any actions or omissions resulting from
+            your reliance on website content.
+          </p> */}
           <p className="font-semibold mb-2">External Links</p>
           <p className="mb-4">
-            If issues arise with linked external sites, please contact the
-            respective organizations. Theprofess is not responsible for the
-            content or functionality of external websites.
-          </p>
-          {/* <p className="mb-4">
-            Additionally, links may be provided for informational purposes where
-            the linked external website offers useful information or is required
-            or authorized by law. Gradeage reserves the right to determine
-            whether the external website aligns with the purpose of this web
-            portal or serves the specified informational needs.
+            MyTutorStation’s web portal may feature links to external websites managed
+            by other organizations. These links are included to provide useful
+            information to visitors. However, the presence of a link does not
+            imply endorsement of the external site or its content. MyTutorStation may
+            remove or update links at any time without prior notice. For
+            concerns about linked external websites, please contact the
+            respective organizations. MyTutorStation is not responsible for the
+            content of external websites.
           </p>
           <p className="mb-4">
+            If you encounter issues with linked external websites, please
+            contact the respective organization. MyTutorStation is not responsible for
+            the content or functionality of external websites.
+          </p>
+          {/* <p className="mb-4">
             Please note that inclusion of a hypertext link to an external
             website does not constitute an endorsement of any product, service,
             or organization referenced therein, nor does it imply agreement with
             any views expressed on the linked website. Hypertext links to
             external websites and pages may be removed or replaced at the
-            discretion of Gradeage, without prior notice.
+            discretion of Eductre, without prior notice.
           </p>
           <p className="mb-4">
             If you encounter any issues regarding the format, accuracy,
             timeliness, or completeness of a linked external website, please
-            contact the organization responsible for that website. Gradeage does
+            contact the organization responsible for that website. Eductre does
             not exercise control over, nor assume responsibility for, the
             content of linked external websites or pages.
           </p> */}

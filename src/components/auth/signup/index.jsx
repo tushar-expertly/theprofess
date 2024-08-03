@@ -62,7 +62,7 @@ function Signup() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ ...signupState, siteId: 4 }),
+        body: JSON.stringify({ ...signupState, siteId: 5 }),
       });
       const data = await response.json();
       // console.log(data);
@@ -106,7 +106,7 @@ function Signup() {
             linkName="Login"
             linkUrl="/login"
           />
-          <form className="mt-2 space-y-6" onSubmit={handleSubmit}>
+          <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
             <div className="">
               {fields.map((field) => (
                 <Input
