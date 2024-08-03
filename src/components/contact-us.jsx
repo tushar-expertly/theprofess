@@ -111,7 +111,7 @@ function ContactUs() {
                 Our friendly team is here to help.
               </p>
               <p className="mt-2 text-blue-500 dark:text-blue-400">
-                care@theprofess.com
+                contact@theprofess.com
               </p>
             </div>
 
@@ -145,8 +145,8 @@ function ContactUs() {
                 Come say hello at our office.
               </p>
               <p className="mt-2 text-blue-500 dark:text-blue-400">
-                1547 Hillview Drive San Francisco <br />
-                Califonia 94103 US
+                3166 Kerry Way Bell Gardens <br />
+                California 90201 US
               </p>
             </div>
           </div>

@@ -25,7 +25,10 @@ export const CoursesProvider = ({ children }) => {
           (site) => site.name === "theprofess" || site.siteId === 4
         )
       );
-      dispatch({ type: GET_COURSES, payload: filteredCourses });
+      const allCourses = filteredCourses?.sort(
+        (a, b) => new Date(a.webinarDate) - new Date(b.webinarDate)
+      );
+      dispatch({ type: GET_COURSES, payload: allCourses });
     } catch (error) {
       console.error("Error fetching courses:", error);
     }
