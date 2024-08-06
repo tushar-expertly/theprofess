@@ -103,7 +103,12 @@ function Training() {
                         <MDBCardImage
                           src={course?.imageSrc}
                           fluid
-                          className="w-40 h-40"
+                          style={{
+                            width: "160px",
+                            height: "160px",
+                            objectFit: "cover",
+                          }}
+                          className="fixed-size-image"
                         />
                       </MDBRipple>
                     </MDBCol>
