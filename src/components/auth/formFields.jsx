@@ -73,7 +73,6 @@ const signupFields = [
     isRequired: true,
     placeholder: "Password again",
   },
-  
 ];
 const ForgotPasswordFields = [
   {
@@ -86,16 +85,29 @@ const ForgotPasswordFields = [
     isRequired: true,
     placeholder: "Email address",
   },
-  {
-    labelText: "Password",
-    labelFor: "password",
-    id: "oldPassword",
-    name: "oldPassword",
-    type: "password",
-    autoComplete: "current-password",
-    isRequired: true,
-    placeholder: "Old Password",
-  },
+  // {
+  //   labelText: "Password",
+  //   labelFor: "password",
+  //   id: "oldPassword",
+  //   name: "oldPassword",
+  //   type: "password",
+  //   autoComplete: "current-password",
+  //   isRequired: true,
+  //   placeholder: "Old Password",
+  // },
+  // {
+  //   labelText: "Password",
+  //   labelFor: "password",
+  //   id: "newPassword",
+  //   name: "newPassword",
+  //   type: "password",
+  //   autoComplete: "current-password",
+  //   isRequired: true,
+  //   placeholder: "New Password",
+  // },
+];
+
+const UpdatePasswordFields = [
   {
     labelText: "Password",
     labelFor: "password",
@@ -106,5 +118,20 @@ const ForgotPasswordFields = [
     isRequired: true,
     placeholder: "New Password",
   },
+  {
+    labelText: "Password",
+    labelFor: "password",
+    id: "confirmPassword",
+    name: "confirmPassword",
+    type: "password",
+    autoComplete: "current-password",
+    isRequired: true,
+    placeholder: "Confirm Password",
+  },
 ];
-export { loginFields, signupFields, ForgotPasswordFields };
+export {
+  loginFields,
+  signupFields,
+  ForgotPasswordFields,
+  UpdatePasswordFields,
+};

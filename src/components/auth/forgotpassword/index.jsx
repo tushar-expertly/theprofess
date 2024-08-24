@@ -4,7 +4,7 @@ import FormAction from "../FormAction";
 import Header from "../Header";
 import { ForgotPasswordFields } from "../formFields";
 import Input from "../Input";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const fields = ForgotPasswordFields;
 let fieldsState = {};
@@ -12,7 +12,10 @@ fields.forEach((field) => (fieldsState[field.id] = ""));
 function ForgotPassword() {
   const [forgotPasswordFieldsState, setForgotPasswordFieldsState] =
     useState(fieldsState);
-  const navigate = useNavigate();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [message, setMessage] = useState("");
+  // const navigate = useNavigate();
 
   const handleChange = (e) => {
     setForgotPasswordFieldsState({
@@ -22,10 +25,12 @@ function ForgotPassword() {
   };
 
   const handleSubmit = async (e) => {
+    localStorage.clear();
     e.preventDefault();
+    setIsLoading(true);
     try {
       const response = await fetch(
-        `https://api.goexpertly.com/users/reset-password`,
+        `https://api.goexpertly.com/users/forgot-password`,
         {
           method: "POST",
           headers: {
@@ -33,21 +38,22 @@ function ForgotPassword() {
           },
           body: JSON.stringify({
             email: forgotPasswordFieldsState.email,
-            oldPassword: forgotPasswordFieldsState.oldPassword,
-            newPassword: forgotPasswordFieldsState.newPassword,
+            siteId: 4,
           }),
         }
       );
       if (response.ok) {
-        navigate("/login");
-        // Password reset successful
-        // Redirect or show a success message
+        setIsSubmitted(true);
+        setMessage("Please check your email to reset your password.");
       } else {
-        // Handle error response from the API
-        // Display error message or handle accordingly
+        setMessage(
+          "There was an issue with your request. Please try again later."
+        );
       }
     } catch (error) {
-      // Handle network errors or other exceptions
+      setMessage("Network error. Please check your connection and try again.");
+    } finally {
+      setIsLoading(false);
     }
   };
   return (
@@ -75,9 +81,16 @@ function ForgotPassword() {
                   type={field.type}
                   isRequired={field.isRequired}
                   placeholder={field.placeholder}
+                  disabled={isSubmitted || isLoading}
                 />
               ))}
-              <FormAction handleSubmit={handleSubmit} text="Change" />
+              {message && <p className="text-sm text-center">{message}</p>}
+              <FormAction
+                handleSubmit={handleSubmit}
+                text={isLoading ? "Loading..." : "Request reset link"}
+                disabled={isSubmitted || isLoading}
+                isLoading={isLoading}
+              />
             </div>
           </form>
         </div>

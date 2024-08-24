@@ -3,7 +3,7 @@ import ExpertlyLogoLogin from "../../../Assets/logo/ExpertlyLogoLogin.png";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../../context/cart_context";
 import { useAuth } from "../../../context/AuthProvider";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import profilePNG from "../../../Assets/profilePNG.png";
 
@@ -24,7 +24,7 @@ function Header() {
 
   const handleLogout = () => {
     logOut();
-    toast.success("You have successfully logged out");
+    // toast.success("You have successfully logged out");
   };
 
   const getMenuClassNames = () => {

@@ -35,6 +35,7 @@ function Signup() {
   };
 
   const handleSubmit = async (e) => {
+    localStorage.clear();
     e.preventDefault();
     if (signupState.password !== signupState.passwordagain) {
       setPasswordError("Please enter the same password.");

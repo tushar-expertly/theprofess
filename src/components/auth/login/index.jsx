@@ -25,6 +25,7 @@ function Login() {
   };
 
   const handleSubmit = async (e) => {
+    localStorage.clear();
     e.preventDefault();
     setIsLoading(true);
     try {

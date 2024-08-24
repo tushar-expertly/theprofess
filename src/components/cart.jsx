@@ -168,22 +168,24 @@ function Cart() {
                     <CartItem key={index} cartItem={cartItem} />
                   ))}
                 </div>
-                <div className="promo-code-section">
-                  {promoMessage && <p>{promoMessage}</p>}
-                  <input
-                    type="text"
-                    placeholder="Enter promo code"
-                    value={promoCode}
-                    onChange={(e) => setPromoCode(e.target.value)}
-                  />
-                  <button onClick={applyPromoCode} disabled={promoLoading}>
-                    {promoLoading ? (
-                      <ClipLoader size={24} color={"#ffffff"} />
-                    ) : (
-                      "Apply Promo Code"
-                    )}
-                  </button>
-                </div>
+                {token ? (
+                  <div className="promo-code-section">
+                    {promoMessage && <p>{promoMessage}</p>}
+                    <input
+                      type="text"
+                      placeholder="Enter promo code"
+                      value={promoCode}
+                      onChange={(e) => setPromoCode(e.target.value)}
+                    />
+                    <button onClick={applyPromoCode} disabled={promoLoading}>
+                      {promoLoading ? (
+                        <ClipLoader size={24} color={"#ffffff"} />
+                      ) : (
+                        "Apply Promo Code"
+                      )}
+                    </button>
+                  </div>
+                ) : null}
               </div>
               <div className="cart-grid-right">
                 <div className="cart-total">

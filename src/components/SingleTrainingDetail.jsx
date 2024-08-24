@@ -101,6 +101,16 @@ const SingleTrainingDetail = () => {
     );
     setSelectedPricing(pricing);
   };
+  function convertMinutes(minutes) {
+    const hours = Math.floor(minutes / 60);
+    const remainingMinutes = minutes % 60;
+
+    if (minutes <= 60) {
+      return `${minutes} min`;
+    }
+
+    return `${hours} hour${hours > 1 ? "s" : ""} ${remainingMinutes} min`;
+  }
 
   return (
     <Layout>
@@ -177,7 +187,7 @@ const SingleTrainingDetail = () => {
                   <FaClock className="text-white-500  " />
                 </span>
                 <span className="fs-14 course-info-txt fw-5">
-                  Duration:- {duration ? duration : null}
+                  Duration:- {duration ? convertMinutes(duration) : null}
                 </span>
               </li>
             </ul>

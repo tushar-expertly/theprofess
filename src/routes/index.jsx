@@ -21,7 +21,7 @@ import PaymentSuccess from "../components/payment-success";
 import PaymentCancel from "../components/payment-cancel";
 import Profile from "../components/profile";
 import MyOrders from "../components/myOrders";
-
+import UpdatePassword from "../components/auth/updatePassword";
 
 const AllRoutes = () => {
   return (
@@ -30,6 +30,7 @@ const AllRoutes = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
+      <Route path="/forgot-password/:tokenid" element={<UpdatePassword />} />
       <Route path="/about-us" element={<Aboutus />} />
       <Route path="/terms-of-use" element={<TermsOfUse />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
@@ -46,9 +47,6 @@ const AllRoutes = () => {
       <Route path="/payment-cancel" element={<PaymentCancel />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/myOrders" element={<MyOrders />} />
-
-
-      
       profile
     </Routes>
   );

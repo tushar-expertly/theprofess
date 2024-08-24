@@ -20,7 +20,7 @@ import {
 function Training() {
   const { courses } = useCoursesContext();
   const [loading, setLoading] = useState(true);
-  console.log(courses);
+  // console.log(courses);
   // console.log('coursess:', courses)
   // if (!courses || courses.length === 0) {
   //   return <p>No courses available.</p>;
@@ -55,6 +55,16 @@ function Training() {
         />
       </div>
     );
+  }
+  function convertMinutes(minutes) {
+    const hours = Math.floor(minutes / 60);
+    const remainingMinutes = minutes % 60;
+
+    if (minutes <= 60) {
+      return `${minutes} min`;
+    }
+
+    return `${hours} hour${hours > 1 ? "s" : ""} ${remainingMinutes} min`;
   }
 
   return (
@@ -156,7 +166,7 @@ function Training() {
                         <span> Name: </span>
                         <span>{course?.instructor}</span>
                         <span className="ml-4"> Duration : </span>
-                        <span>{course?.duration}</span>
+                        <span>{convertMinutes(course?.duration)}</span>
                         <br /> {/* <span className=""> ID : </span> */}
                         {/* <span>{courses.features[2]}</span> */}
                       </div>
