@@ -306,80 +306,80 @@ const SingleTrainingDetail = () => {
       </SingleCourseWrapper>
       <section className="bg-white dark:bg-gray-900">
         {description ? (
-          <div className="container flex flex-col px-4 py-12">
+          <div className="container flex flex-col mt-3">
             <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
               <span className="text-blue-500">Description :</span>
             </h2>
 
-            <p className="mt-2 text-gray-500 dark:text-gray-300">
+            <p className="text-gray-500 dark:text-gray-300">
               {description ? parse(description) : null}
             </p>
           </div>
         ) : null}
         {why_register ? (
-          <div className="container flex flex-col px-4 py-12">
+          <div className="container flex flex-col mt-1">
             <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
               <span className="text-blue-500">Why Register :</span>
             </h2>
 
-            <p className="mt-2 text-gray-500 dark:text-gray-300">
+            <p className="text-gray-500 dark:text-gray-300">
               {why_register ? parse(why_register) : null}
             </p>
           </div>
         ) : null}
         {what_you_will_learn ? (
-          <div className="container flex flex-col px-4 py-12">
+          <div className="container flex flex-col mt-1">
             <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
               <span className="text-blue-500">Why Should You Attend : </span>
             </h2>
 
-            <p className="mt-2 text-gray-500 dark:text-gray-300">
+            <p className="text-gray-500 dark:text-gray-300">
               {what_you_will_learn ? parse(what_you_will_learn) : null}
             </p>
           </div>
         ) : null}
         {areas_covered ? (
-          <div className="container flex flex-col px-4 py-12">
+          <div className="container flex flex-col mt-1">
             <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
               <span className="text-blue-500">
                 Areas Covered in the Webinar Session :
               </span>
             </h2>
 
-            <div className="mt-2 text-gray-500 dark:text-gray-300">
+            <div className="text-gray-500 dark:text-gray-300">
               {areas_covered ? parse(areas_covered) : null}
             </div>
           </div>
         ) : null}
         {who_will_benefit ? (
-          <div className="container flex flex-col px-4 py-12">
+          <div className="container flex flex-col mt-1">
             <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
               <span className="text-blue-500">Who will benefit?</span>
             </h2>
 
-            <p className="mt-2 text-gray-500 dark:text-gray-300">
+            <p className="text-gray-500 dark:text-gray-300">
               {who_will_benefit ? parse(who_will_benefit) : null}
             </p>
           </div>
         ) : null}
         {instructor_profile ? (
-          <div className="container flex flex-col px-4 py-12">
+          <div className="container flex flex-col mt-1">
             <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
               <span className="text-blue-500">Instructor Profile :</span>
             </h2>
 
-            <p className="mt-2 text-gray-500 dark:text-gray-300">
+            <p className="text-gray-500 dark:text-gray-300">
               {instructor_profile ? parse(instructor_profile) : null}
             </p>
           </div>
         ) : null}
         {background ? (
-          <div className="container flex flex-col px-4 py-12">
+          <div className="container flex flex-col mt-1">
             <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
               <span className="text-blue-500">Background :</span>
             </h2>
 
-            <p className="mt-2 text-gray-500 dark:text-gray-300">
+            <p className="text-gray-500 dark:text-gray-300">
               {background ? parse(background) : null}
             </p>
           </div>
