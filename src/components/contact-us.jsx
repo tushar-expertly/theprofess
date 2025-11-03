@@ -145,7 +145,7 @@ function ContactUs() {
                 Come say hello at our office.
               </p>
               <p className="mt-2 text-blue-500 dark:text-blue-400">
-                3166 Kerry Way Bell Gardens <br />
+                6700 Garfield Ave Bell Gardens <br />
                 California 90201 US
               </p>
             </div>
