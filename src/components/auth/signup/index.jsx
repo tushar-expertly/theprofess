@@ -35,7 +35,6 @@ function Signup() {
   };
 
   const handleSubmit = async (e) => {
-    localStorage.clear();
     e.preventDefault();
     if (signupState.password !== signupState.passwordagain) {
       setPasswordError("Please enter the same password.");
@@ -54,6 +53,7 @@ function Signup() {
     setCaptchaError("");
     setIsLoading(true);
     await createAccount();
+    localStorage.clear();
   };
 
   const createAccount = async () => {
